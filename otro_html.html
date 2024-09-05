@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/qr.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <form action="#" id="qrForm">
+                <h2 class="contenedor__form__titulo">Generador de Código</h2>
+                <input type="text" id="qrText" placeholder="Ingrese el texto para generar el código">
+                <button type="button" class="contenedor__form__btn__generar" onclick="generarQR()">Generar QR</button>
+
+                <div class="qr__code" id="qrCode"></div>
+                <button class="contenedor__form_btn__descarga" id="btnDescargar" style="display: none;" onclick="descargarQR()">Descargar Código</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="qr.js"></script>
+</body>
+</html>
